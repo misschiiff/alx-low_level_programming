@@ -1,14 +1,19 @@
-#include "mian.h"
+#include "holberton.h"
 
 /**
  * _strlen_recursion - returns the length of a string
- * @s: input string
- * Return: length of s
+ * @s: pointer the string
+ * Return: int
  */
 
 int _strlen_recursion(char *s)
 {
-	if (!*s)
-		return (0);
-	return (1 + _strlen_recursion(++s));
+int n = 0;
+
+if (*s > '\0')
+{
+	n += _strlen_recursion(s + 1) + 1;
+}
+
+return (n);
 }
