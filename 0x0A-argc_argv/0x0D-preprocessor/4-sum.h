@@ -1,4 +1,6 @@
-#ifndef FOUR_SUM_H
-#define FOUR_SUM_H
+#ifndef _SUM_LIKE_MACRO_
+#define _SUM_LIKE_MACRO_
+
 #define SUM(x, y) ((x) + (y))
-#endif /* FOUR_SUM_H */
+
+#endif
